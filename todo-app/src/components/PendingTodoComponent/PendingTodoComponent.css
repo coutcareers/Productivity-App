@@ -1,0 +1,21 @@
+.todo-pending {
+    background-color: white;
+    height: 95%;
+    margin: 10px;
+    border-radius: 5px;
+    width: 20rem;
+    border: 1px solid;
+    border-top: 10px solid #ffac00;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.todo-pending-tasklist {
+    margin: 15px 15px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    border-left: 5px #ffac00 solid;
+}

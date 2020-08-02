@@ -1,0 +1,11 @@
+.todo-common-input {
+    height: 1.5rem;
+    width: 20rem;
+}
+
+.todo-common-input:focus {
+    outline: #803a97;
+}
+
+label {
+}

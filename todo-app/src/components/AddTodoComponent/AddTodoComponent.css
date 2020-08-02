@@ -1,0 +1,13 @@
+.todo-add-pending{
+    width: 100%;
+    margin: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+Input {
+    margin: 10px;
+    padding: 3px;
+}

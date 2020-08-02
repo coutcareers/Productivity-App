@@ -1,0 +1,41 @@
+.todo-header {
+    height: 10vh;
+    width: 100vw;
+    background-color: #803a97;
+    position: relative;
+}
+
+#todo-logo {
+    position: absolute;
+    top:50%;
+    left:1.5rem;
+    box-shadow: 2px 2px 2px 2px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgb(232, 218, 233, 0.5);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: color 0.3s linear;
+    padding: 0.2rem;
+}
+
+#todo-logo:hover {
+    color: white;
+    opacity: 1;
+}
+
+#todo-search {
+    position: absolute;
+    top:50%;
+    right:10%;
+    transform: translateY(-50%);
+}
+
+#todo-logout {
+    position: absolute;
+    top:50%;
+    right:2%;
+    transform: translateY(-50%);
+}

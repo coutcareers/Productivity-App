@@ -1,0 +1,18 @@
+.todo-common-button {
+    height: 1.8rem;
+    border-radius: 5px;
+    border: none;
+    color: #803a97;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.todo-common-button:focus {
+    outline: none;
+}
+.todo-common-button:active {
+    outline: none;
+    box-shadow: none;
+    transition: box-shadow 0.3s linear;
+}
