@@ -11,7 +11,7 @@ export default class FormComponent extends Component {
     }
 
     render() {
-        let { onSubmit } = this.props
+        let { onSubmit, submitButtonName } = this.props
         return (
             <form onSubmit={onSubmit}>
                 <img src={FormImage} alt="Form"/>
@@ -19,7 +19,7 @@ export default class FormComponent extends Component {
                 <InputButton 
                         className="todo-add-button"
                         type="submit"
-                        value="Add Todo"
+                        value={submitButtonName}
                 />
             </form>
                 

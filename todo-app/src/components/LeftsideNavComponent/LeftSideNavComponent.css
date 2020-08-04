@@ -2,4 +2,13 @@
     height: 90vh;
     width: 19rem;
     background-color: #b78fbe;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.todo-button-wrapper {
+    text-align: center;
+    padding: 1.5rem;
 }

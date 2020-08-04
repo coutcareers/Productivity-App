@@ -18,3 +18,9 @@
     padding: 10px;
     border-left: 5px #00ff7c solid;
 }
+
+.todo-deleted-button {
+    position: relative;
+    left: 70%;
+    cursor: pointer;
+}

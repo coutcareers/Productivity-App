@@ -9,11 +9,15 @@ export default class PendingTodoComponent extends Component {
     }
 
     render() {
-        let { TodoList } = this.props
+        let { TodoList, handlePendingTodoClick } = this.props
         return (
             <div className="todo-pending">
-                {TodoList.length>0 && TodoList.map((listItem, index) => listItem.status==="PENDING" && <Draggable id={index + 'drag'}><p className="todo-pending-tasklist">
-                    {listItem.taskName}</p>
+                {TodoList.length>0 && TodoList.map((listItem, index) => listItem.status==="PENDING" && 
+                    <Draggable id={index + 'drag'}>
+                    <p id ={listItem.id} className="todo-pending-tasklist">
+                    {listItem.taskName}
+                    <span className="todo-completed-button" onClick={() => handlePendingTodoClick(listItem.id)}>&#9989;</span>
+                    </p>
                     </Draggable>)
                 }
                 {

@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import './HeaderComponent.css'
 import PropTypes from 'prop-types'
 
+import { Link } from 'react-router-dom'
+
+import {TodoAppContext} from '../../context/context'
 import SearchInput from '../../common/InputTextComponent'
 import SignOutButton from '../../common/ButtonComponent'
 
@@ -32,7 +35,11 @@ export default class HeaderComponent extends Component {
         let { inputValue } = this.state
         return (
             <div className="todo-header">
-               <span id="todo-logo">Hello, Jyotiman</span>
+               <span id="todo-logo">
+                   <TodoAppContext.Consumer>
+                       {context => <span>Hello, {context.state.user}</span>}
+                   </TodoAppContext.Consumer>
+               </span>
                <span id="todo-search">
                    <SearchInput 
                         type="text"
@@ -43,9 +50,10 @@ export default class HeaderComponent extends Component {
                     />
                 </span>
                 <span id="todo-logout">
-                <SignOutButton onClick={this.handleSignOut}
+                <Link to='/'><SignOutButton onClick={this.handleSignOut}
                                name="Sign Out"
                 />
+                </Link>
                 </span>
             </div>
         )

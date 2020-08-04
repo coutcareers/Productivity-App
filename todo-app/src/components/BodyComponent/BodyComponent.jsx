@@ -10,11 +10,25 @@ export default class BodyComponent extends Component {
         prop: PropTypes
     }
 
+    constructor(props){
+        super(props)
+        this.state = {
+            showDeleted : false
+        }
+        this.handleShowDeleted = this.handleShowDeleted.bind(this)
+    }
+
+    handleShowDeleted(){
+        let { showDeleted } = this.state
+        this.setState({showDeleted : !showDeleted})
+    }
+
     render() {
+        let { showDeleted } = this.state
         return (
             <div className='todo-body'>
-               <LeftSideNav />
-               <AddTodo /> 
+               <LeftSideNav handleShowDeleted={this.handleShowDeleted}/>
+               <AddTodo showDeleted={showDeleted}/> 
             </div>
         )
     }

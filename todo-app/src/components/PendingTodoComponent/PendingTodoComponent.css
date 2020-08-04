@@ -19,3 +19,8 @@
     cursor: pointer;
     border-left: 5px #ffac00 solid;
 }
+
+.todo-completed-button {
+    position: relative;
+    left: 70%;
+}
